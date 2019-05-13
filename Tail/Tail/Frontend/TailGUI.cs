@@ -26,7 +26,7 @@ namespace Tail.Frontend
             if(s.Equals(Reader))
             {
                 string str = (string)obj;
-                TxtLines.AppendText("\n" + str);
+                TxtLines.AppendText(str + "\n");
             }
         }
 

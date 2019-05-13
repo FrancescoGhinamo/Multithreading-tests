@@ -19,17 +19,31 @@ namespace TailFrontend.Tail.Backend
 
         public void Run()
         {
-            FileStream fStr = File.OpenRead(Path);
-            StreamReader r = new StreamReader(fStr);
-            while(true)
+            FileStream fStr = null;
+            try
             {
-                string line = r.ReadLine();
-                if(!line.Equals(""))
+                fStr = File.OpenRead(Path);
+                StreamReader r = new StreamReader(fStr);
+                while (true)
                 {
-                    SetChanged();
-                    NotifyObserves(line);
+                    string line = r.ReadLine();
+                    if (line != null)
+                    {
+                        SetChanged();
+                        NotifyObserves(line);
+                    }
                 }
             }
+            catch(Exception ) {}
+            finally
+            {
+                if(fStr != null)
+                {
+                    fStr.Close();
+                }
+                
+            }
+            
         }
 
     }
