@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading1", "Multithr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncTest", "AsyncTest\AsyncTest.csproj", "{B5EC4E12-AE8D-42BE-9FC3-C4DF0E9224DF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tail", "Tail\Tail.csproj", "{293A064B-0285-47BB-AA32-8DD5C9F6FE59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B5EC4E12-AE8D-42BE-9FC3-C4DF0E9224DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B5EC4E12-AE8D-42BE-9FC3-C4DF0E9224DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B5EC4E12-AE8D-42BE-9FC3-C4DF0E9224DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{293A064B-0285-47BB-AA32-8DD5C9F6FE59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{293A064B-0285-47BB-AA32-8DD5C9F6FE59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{293A064B-0285-47BB-AA32-8DD5C9F6FE59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{293A064B-0285-47BB-AA32-8DD5C9F6FE59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
