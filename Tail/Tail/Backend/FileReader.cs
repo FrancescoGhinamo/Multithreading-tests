@@ -17,22 +17,25 @@ namespace TailFrontend.Tail.Backend
             this.Path = p;
         }
 
-        public void Run()
+        public async Task Run()
         {
             FileStream fStr = null;
             try
             {
                 fStr = File.OpenRead(Path);
                 StreamReader r = new StreamReader(fStr);
-                while (true)
+                await Task.Run(() =>
                 {
-                    string line = r.ReadLine();
-                    if (line != null)
+                    while (true)
                     {
-                        SetChanged();
-                        NotifyObserves(line);
+                        string line = r.ReadLine();
+                        if (line != null)
+                        {
+                            SetChanged();
+                            NotifyObserves(line);
+                        }
                     }
-                }
+                }); 
             }
             catch(Exception ) {}
             finally

@@ -43,7 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Async\AsyncProgram.cs" />
+    <Compile Include="Async\AsyncBreakfast.cs" />
+    <Compile Include="Async\Coffe.cs" />
+    <Compile Include="Async\Toast.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

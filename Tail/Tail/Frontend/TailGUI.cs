@@ -49,7 +49,7 @@ namespace Tail.Frontend
             {
                 Reader = new FileReader(d.FileName);
                 Reader.AddObserver(this);
-                new Thread(new ThreadStart(Reader.Run)).Start();
+                Reader.Run();
             }
         }
     }
